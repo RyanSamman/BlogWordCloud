@@ -8,12 +8,14 @@ with open("processedData.json", "r") as file:
 
 # Concatenate all blogs into one string
 textData = " ".join(data)
+print(textData)
 
 # Remove newlines
 textData = textData.replace("\n", " ")
+print(textData)
 
 # Get individual words
-words = re.findall("[a-z\\']+", textData, flags=re.IGNORECASE)
+words = re.findall(r"[a-z\']+", textData, flags=re.IGNORECASE)
 print(words)
 
 # Convert all words into lowercase

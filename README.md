@@ -131,8 +131,9 @@ textData = textData.replace("\n", " ") # Simply replace the newlines with a " "
 
 ### Selecting all the words present
 To achieve this I wrote a [Regular Expression](https://en.wikipedia.org/wiki/Regular_expression), to match strings which match a certain pattern. Here, it is looking for any case insensitive sequence of characters which contains letters from A to Z, or `'`.
+
 ```py
-words = re.findall("[a-z\\']+", newData, flags=re.IGNORECASE) # Get individual words
+words = re.findall(r"[a-z\']+", newData, flags=re.IGNORECASE) # Get individual words
 ```
 This will give us an array of all the words present in the string.
 
