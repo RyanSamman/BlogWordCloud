@@ -24,7 +24,7 @@ As part of our CPIT221 course, we write a weekly blog. In our previous week's bl
 
 As someone who likes data, it was a no brainer to scrape and visualize that data, so this is the end result:
 
-<div style="text-align:center"><img src="./images/BlogWordCloud.png" alt="Word Cloud Scraped Image"/></div>
+<p align="center"><img src="./images/BlogWordCloud.png" alt="Word Cloud Scraped Image"/></p>
 
 If it wasn't obvious, the size of the text correlates to how frequent the word appears in all the blogs.
 
@@ -194,7 +194,7 @@ wordAndFrequencyData = json.load(open("processedData.json", "r"))
 ### Load the target image
 From reading the documentation, I realized that you could superimpose text into an existing picture, called a `mask`. Therefore, I chose the FCIT Logo for this purpose.
 
-<div style="text-align:center"><img style="width: 300px" src="./images/FCITLogo.jpg" alt="Original Image"/></div>
+<img align="left" width="120" height="120" src="./images/FCITLogo.jpg" alt="Original Image">
 
 ```py
 # Load Image which text will be superimposed onto
@@ -223,6 +223,8 @@ wordCloudObject.generate_from_frequencies(wordAndFrequencyData)
 
 Then, we wil pass in the WordCloud object into matplotlib, and display the chart.
 
+<img align="left" width="140" height="140" src="./images/ExampleWordCloud.png" alt="Word Cloud Example"/>
+
 ```py
 # Remove Axis markings
 plt.axis("off")
@@ -231,5 +233,3 @@ plt.axis("off")
 plt.imshow(wordCloudObject.recolor(color_func=imageColors), interpolation="bilinear")
 plt.show()
 ```
-
-<div style="text-align:center"><img style="width: 320px" src="./images/ExampleWordCloud.png" alt="Word Cloud Example"/></div>
