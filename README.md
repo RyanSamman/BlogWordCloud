@@ -37,7 +37,7 @@ I split the code for this project into three distinct parts:
 Of course, to achieve this, we will need to install some dependencies.
 
 ## Dependencies
-To view and run the code, you will need to use a [Jupyter Notebook](https://jupyter.org). Alternatively, [Read this and run the .py files](./pythonFiles/pythonFiles.md).
+To view and run the code, you will need to use a [Jupyter Notebook](https://jupyter.org). Alternatively, [Read this and run the .py files](./pythonFiles/README.md).
 
 Visual Studio Code has Jupyter Notebook support built into it's [Python Extention](https://marketplace.visualstudio.com/items?itemName=ms-python.python), and that is what I have used for this project.
 
